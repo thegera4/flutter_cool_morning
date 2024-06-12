@@ -31,3 +31,12 @@ flutter:
   assets:
     - images/
 
+  fonts:
+    - family: Gotham
+      fonts:
+        - asset: fonts/gotham_ultra.otf
+
+    - family: Gothic
+      fonts:
+        - asset: fonts/GOTHIC.ttf
+        - asset: fonts/GOTHICB.ttf

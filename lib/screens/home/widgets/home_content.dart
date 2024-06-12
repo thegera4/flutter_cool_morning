@@ -22,9 +22,15 @@ class HomeContent extends StatelessWidget {
               )
           ),
         ),
-        const Expanded(
+        Expanded(
           flex: 1,
-          child: Center(child: Text(kHomeText,),),
+          child: Center(
+            child: Text(
+              kHomeText,
+              style: isTablet ? Theme.of(context).textTheme.bodyLarge :
+                Theme.of(context).textTheme.bodyMedium,
+            ),
+          ),
         ),
       ],
     );

@@ -1,7 +1,18 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_cool_morning/screens/home/home_screen.dart';
+import 'package:flutter_cool_morning/utils/constants.dart';
+import 'package:flutter/services.dart';
 
-void main() => runApp(const MyApp());
+void main() {
+  // Set preferred orientations to portrait only
+  WidgetsFlutterBinding.ensureInitialized();
+  SystemChrome.setPreferredOrientations([
+    DeviceOrientation.portraitUp,
+    DeviceOrientation.portraitDown,
+  ]).then((_) {
+    runApp(const MyApp());
+  });
+}
 
 class MyApp extends StatelessWidget {
   const MyApp({super.key});
@@ -18,14 +29,23 @@ class MyApp extends StatelessWidget {
           accentColor: Colors.teal,
           backgroundColor: Colors.white,
         ),
-        fontFamily: 'Roboto', //TODO: Add my font and use it here
+        fontFamily: kGotham,
         textTheme: const TextTheme(
-          bodyLarge: TextStyle(fontSize: 18.0),
-          bodyMedium: TextStyle(fontSize: 16.0),
-          bodySmall: TextStyle(fontSize: 14.0),
-          headlineLarge: TextStyle(fontSize: 48.0, fontWeight: FontWeight.bold),
-          headlineMedium: TextStyle(fontSize: 36.0, fontWeight: FontWeight.bold),
-          headlineSmall: TextStyle(fontSize: 24.0, fontWeight: FontWeight.bold),
+          bodyLarge: TextStyle(
+              fontSize: 24.0,
+              fontWeight: FontWeight.bold,
+              color: Colors.brown
+          ),
+          bodyMedium: TextStyle(
+              fontSize: 18.0,
+              fontWeight: FontWeight.bold,
+              color: Colors.brown
+          ),
+          bodySmall: TextStyle(
+              fontSize: 14.0,
+              fontWeight: FontWeight.bold,
+              color: Colors.brown
+          ),
         ),
         useMaterial3: true,
       ),

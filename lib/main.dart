@@ -1,15 +1,14 @@
 import 'package:flutter/material.dart';
-import 'package:persistent_bottom_nav_bar_v2/persistent_bottom_nav_bar_v2.dart';
+import 'package:flutter_cool_morning/screens/home/home_screen.dart';
 
-void main() {
-  runApp(const MyApp());
-}
+void main() => runApp(const MyApp());
 
 class MyApp extends StatelessWidget {
   const MyApp({super.key});
 
   @override
   Widget build(BuildContext context) {
+
     return MaterialApp(
       debugShowCheckedModeBanner: false,
       title: 'Cool Morning',
@@ -30,62 +29,7 @@ class MyApp extends StatelessWidget {
         ),
         useMaterial3: true,
       ),
-      home: const MyHomePage(title: 'Cool Morning'),
+      home: const Home(),
     );
   }
 }
-
-class MyHomePage extends StatefulWidget {
-  const MyHomePage({super.key, required this.title});
-
-  final String title;
-
-  @override
-  State<MyHomePage> createState() => _MyHomePageState();
-}
-
-class _MyHomePageState extends State<MyHomePage> {
-
-  @override
-  Widget build(BuildContext context) {
-
-    return PersistentTabView(
-      tabs: [
-        PersistentTabConfig(
-          screen: const Text("Your First Screen"),
-          item: ItemConfig(
-            icon: const Icon(Icons.home),
-            title: "Home",
-            inactiveForegroundColor: Colors.brown,
-            activeColorSecondary: Colors.white,
-            activeForegroundColor: Colors.teal,
-          ),
-        ),
-        PersistentTabConfig(
-          screen: const Text("Your Second Screen"),
-          item: ItemConfig(
-            icon: const Icon(Icons.message),
-            title: "Messages",
-            inactiveForegroundColor: Colors.brown,
-            activeColorSecondary: Colors.white,
-            activeForegroundColor: Colors.teal,
-          ),
-        ),
-        PersistentTabConfig(
-          screen: const Text("Your Third Screen"),
-          item: ItemConfig(
-            icon: const Icon(Icons.settings),
-            title: "Settings",
-            inactiveForegroundColor: Colors.brown,
-            activeColorSecondary: Colors.white,
-            activeForegroundColor: Colors.teal,
-          ),
-        ),
-      ],
-      navBarBuilder: (navBarConfig) => Style2BottomNavBar(
-        navBarConfig: navBarConfig,
-      ),
-    );
-  }
-}
-

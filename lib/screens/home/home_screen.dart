@@ -19,7 +19,7 @@ class _HomeState extends State<Home> {
   void initState() {
     super.initState();
     // Hide the system bars
-    SystemChrome.setEnabledSystemUIMode(SystemUiMode.immersiveSticky);
+    SystemChrome.setEnabledSystemUIMode(SystemUiMode.edgeToEdge);
   }
 
   @override

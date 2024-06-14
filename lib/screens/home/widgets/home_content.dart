@@ -6,29 +6,29 @@ class HomeContent extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-
     final deviceSize = MediaQuery.of(context).size;
     final isTablet = deviceSize.width > 600;
+    final isSmallPhone = deviceSize.height <= 736 ? true : false;
 
     return Column(
       children: <Widget>[
-        Expanded(
-          flex: isTablet ? 8 : 4,
-          child: const SizedBox(
-              width: double.infinity,
-              child: Image(
-                  image: AssetImage(kHomeImage),
-                  fit: BoxFit.cover
-              )
+        SizedBox(
+          height: isTablet ? deviceSize.height * 0.85 :
+          isSmallPhone ? deviceSize.height * 0.7 : deviceSize.height * 0.80,
+          width: double.infinity,
+          child: const Image(
+            image: AssetImage(kHomeImage),
+            fit: BoxFit.cover,
           ),
         ),
-        Expanded(
-          flex: 1,
+        SizedBox(
+          height: 110.0,
+          width: deviceSize.width,
           child: Center(
             child: Text(
               kHomeText,
-              style: isTablet ? Theme.of(context).textTheme.bodyLarge :
-                Theme.of(context).textTheme.bodyMedium,
+              style: Theme.of(context).textTheme.bodyLarge,
+              textAlign: TextAlign.center,
             ),
           ),
         ),

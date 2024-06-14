@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-
 import '../../utils/constants.dart';
 
 class ContactScreen extends StatelessWidget {
@@ -9,22 +8,39 @@ class ContactScreen extends StatelessWidget {
   Widget build(BuildContext context) {
     return Stack(
       children: <Widget>[
-        // The BoxDecoration is used here only for styling purposes
         Container(
-          decoration: const BoxDecoration(
+          decoration: const BoxDecoration( // This is used for styling
             image: DecorationImage(
-              image: AssetImage(kContactBackgroundImg), // replace with your image
+              image: AssetImage(kContactBackgroundImg),
               fit: BoxFit.cover,
             ),
           ),
         ),
-        // Here's your column of content
-        const Column(
-          mainAxisAlignment: MainAxisAlignment.center,
-          children: <Widget>[
-            Text('Hello, World!',),
-            // Add more widgets to the column as needed
-          ],
+        SafeArea(
+          child: Center(
+            child: Padding(
+              padding: const EdgeInsets.symmetric(horizontal: 5.0),
+              child: Column(
+                mainAxisAlignment: MainAxisAlignment.start,
+                crossAxisAlignment: CrossAxisAlignment.center,
+                children: <Widget>[
+                  const Padding(
+                    padding: EdgeInsets.symmetric(vertical: 16.0),
+                    child: Image(
+                      image: AssetImage(kTopBarLogo),
+                      width: 200.0,
+                    ),
+                  ),
+                  Text(
+                    kTopBarTextContact,
+                    textAlign: TextAlign.center,
+                    style: Theme.of(context).textTheme.bodyLarge,
+                  ),
+                  // Add more widgets to the column as needed
+                ],
+              ),
+            ),
+          ),
         ),
       ],
     );

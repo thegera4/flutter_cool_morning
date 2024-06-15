@@ -11,7 +11,7 @@ class CatalogsScreen extends StatelessWidget {
     return Stack(
         children: <Widget>[
           Opacity(
-            opacity: 0.2,
+            opacity: kCatalogsBackgroundOpacity,
             child: Container(
               decoration: const BoxDecoration( // This is used for styling
                 image: DecorationImage(
@@ -28,10 +28,10 @@ class CatalogsScreen extends StatelessWidget {
                 crossAxisAlignment: CrossAxisAlignment.center,
                 children: <Widget>[
                   const Padding(
-                    padding: EdgeInsets.symmetric(vertical: 16.0),
+                    padding: EdgeInsets.symmetric(vertical: kSizeBoxSpacing),
                     child: Image(
                         image: AssetImage(kTopBarLogo),
-                        width: 150.0,
+                        width: kTopBarLogoWidth,
                     ),
                   ),
                   Text(
@@ -39,7 +39,7 @@ class CatalogsScreen extends StatelessWidget {
                     textAlign: TextAlign.center,
                     style: Theme.of(context).textTheme.bodyMedium,
                   ),
-                  const SizedBox(height: 16.0),
+                  const SizedBox(height: kSizeBoxSpacing),
                   Expanded(
                       child: ListView(
                         children: const <Widget>[
@@ -49,21 +49,21 @@ class CatalogsScreen extends StatelessWidget {
                             avatar: kAvatarDesayunos,
                             catalog: kDesayunosPath,
                           ),
-                          SizedBox(height: 16.0),
+                          SizedBox(height: kSizeBoxSpacing),
                           ChatWithAvatar(
                             avatarPosition: AvatarPosition.left,
                             image: kCenasImg,
                             avatar: kAvatarCenas,
                             catalog: kCenasPath,
                           ),
-                          SizedBox(height: 16.0),
+                          SizedBox(height: kSizeBoxSpacing),
                           ChatWithAvatar(
                             avatarPosition: AvatarPosition.right,
                             image: kLucesImg,
                             avatar: kAvatarLuces,
                             catalog: kLucesPath,
                           ),
-                          SizedBox(height: 16.0),
+                          SizedBox(height: kSizeBoxSpacing),
                           ChatWithAvatar(
                             avatarPosition: AvatarPosition.left,
                             image: kEspecialImg,

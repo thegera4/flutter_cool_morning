@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_cool_morning/screens/contact/widgets/social_contact.dart';
 import '../../utils/constants.dart';
 
 class ContactScreen extends StatelessWidget {
@@ -25,18 +26,48 @@ class ContactScreen extends StatelessWidget {
                 crossAxisAlignment: CrossAxisAlignment.center,
                 children: <Widget>[
                   const Padding(
-                    padding: EdgeInsets.symmetric(vertical: 16.0),
+                    padding: EdgeInsets.symmetric(vertical: kSizeBoxSpacing),
                     child: Image(
                       image: AssetImage(kTopBarLogo),
-                      width: 200.0,
+                      width: kTopBarLogoWidth,
                     ),
                   ),
                   Text(
                     kTopBarTextContact,
                     textAlign: TextAlign.center,
-                    style: Theme.of(context).textTheme.bodyLarge,
+                    style: Theme.of(context).textTheme.bodyMedium,
                   ),
-                  // Add more widgets to the column as needed
+                  const SizedBox(height: kSizeBoxSpacing),
+                  Expanded(
+                      child: ListView(
+                        children: const <Widget>[
+                          SocialContact(
+                            image: kWebImage,
+                            url: kWebUrl,
+                          ),
+                          SizedBox(height: kSizeBoxSpacing),
+                          SocialContact(
+                            image: kWhatsappImage,
+                            url: kWhatsappUrl,
+                          ),
+                          SizedBox(height: kSizeBoxSpacing),
+                          SocialContact(
+                            image: kFacebookImage,
+                            url: kFacebookUrl,
+                          ),
+                          SizedBox(height: kSizeBoxSpacing),
+                          SocialContact(
+                            image: kInstagramImage,
+                            url: kInstagramUrl,
+                          ),
+                          SizedBox(height: kSizeBoxSpacing),
+                          SocialContact(
+                            image: kEmailImage,
+                            url: kEmailUrl,
+                          ),
+                        ],
+                      )
+                  ),
                 ],
               ),
             ),

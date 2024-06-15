@@ -14,7 +14,7 @@ class HomeContent extends StatelessWidget {
       children: <Widget>[
         SizedBox(
           height: isTablet ? deviceSize.height * 0.85 :
-          isSmallPhone ? deviceSize.height * 0.7 : deviceSize.height * 0.80,
+          isSmallPhone ? deviceSize.height * 0.73 : deviceSize.height * 0.80,
           width: double.infinity,
           child: const Image(
             image: AssetImage(kHomeImage),
@@ -27,7 +27,7 @@ class HomeContent extends StatelessWidget {
           child: Center(
             child: Text(
               kHomeText,
-              style: Theme.of(context).textTheme.bodyLarge,
+              style: Theme.of(context).textTheme.bodyMedium,
               textAlign: TextAlign.center,
             ),
           ),

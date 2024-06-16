@@ -54,6 +54,7 @@ const kGothicBold = 'fonts/GOTHICB.ttf';
 
 // Widths
 const kSizeBoxSpacing = 16.0;
+const kSpacingContact = 32.0;
 const kTopBarLogoWidth = 150.0;
 const kSocialContactWidth = 250.0;
 

@@ -37,7 +37,7 @@ class ContactScreen extends StatelessWidget {
                     textAlign: TextAlign.center,
                     style: Theme.of(context).textTheme.bodyMedium,
                   ),
-                  const SizedBox(height: kSizeBoxSpacing),
+                  const SizedBox(height: kSpacingContact),
                   Expanded(
                       child: ListView(
                         children: const <Widget>[
@@ -45,22 +45,22 @@ class ContactScreen extends StatelessWidget {
                             image: kWebImage,
                             url: kWebUrl,
                           ),
-                          SizedBox(height: kSizeBoxSpacing),
+                          SizedBox(height: kSpacingContact),
                           SocialContact(
                             image: kWhatsappImage,
                             url: kWhatsappUrl,
                           ),
-                          SizedBox(height: kSizeBoxSpacing),
+                          SizedBox(height: kSpacingContact),
                           SocialContact(
                             image: kFacebookImage,
                             url: kFacebookUrl,
                           ),
-                          SizedBox(height: kSizeBoxSpacing),
+                          SizedBox(height: kSpacingContact),
                           SocialContact(
                             image: kInstagramImage,
                             url: kInstagramUrl,
                           ),
-                          SizedBox(height: kSizeBoxSpacing),
+                          SizedBox(height: kSpacingContact),
                           SocialContact(
                             image: kEmailImage,
                             url: kEmailUrl,

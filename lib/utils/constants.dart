@@ -34,6 +34,12 @@ const kFacebookImage = 'images/facebook.png';
 const kInstagramImage = 'images/instagram.png';
 const kEmailImage = 'images/gmail.png';
 
+// Catalogs Screen URLs
+const kDesayunosUrl = 'https://drive.google.com/file/d/1muxERMvcsznSELVf41UY7FxUw0w4_DQD/view';
+const kCenasUrl = 'https://drive.google.com/file/d/1Qvzy5KamWYffmrkouHKAYQ9kDSFaFKvl/view';
+const kLucesUrl = 'https://drive.google.com/file/d/1JRyH84cMVAB-HvZkoxox-hlBS5XyHHc8/view';
+const kEspecialUrl = 'https://drive.google.com/file/d/1muxERMvcsznSELVf41UY7FxUw0w4_DQD/view';
+
 // Contact Screen URLs
 const kWebUrl = 'https://coolmorning.com.mx/';
 const kWhatsappUrl = 'https://wa.me/528711390732?text=Hola,%20me%20gustaría%20hacer%20un%20pedido...';
@@ -42,10 +48,10 @@ const kInstagramUrl = 'https://www.instagram.com/coolmorning';
 const kEmailUrl = 'mailto:fatme.sabag@coolmorning.com.mx?subject=Contacto%20Cool%20Morning&body=Hola,%20me%20gustaría%20hacer%20un%20pedido...';
 
 // Catalogs Screen File Paths
-const kDesayunosPath = 'assets/desayunos_y_globos.pdf';
-const kCenasPath = 'assets/cena_en_columpios.pdf';
-const kLucesPath = 'assets/neones_y_decoracion.pdf';
-const kEspecialPath = 'pdfs/desayunos_y_globos.pdf';
+//const kDesayunosPath = 'assets/desayunos_y_globos.pdf';
+//const kCenasPath = 'assets/cena_en_columpios.pdf';
+//const kLucesPath = 'assets/neones_y_decoracion.pdf';
+//const kEspecialPath = 'pdfs/desayunos_y_globos.pdf';
 
 // Fonts
 const kGotham = 'fonts/gotham_ultra.otf';

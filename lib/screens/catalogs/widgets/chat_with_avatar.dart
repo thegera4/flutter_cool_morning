@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_cool_morning/screens/pdf/pdf_screen.dart';
 import 'package:flutter_cool_morning/utils/enums.dart';
+import 'package:url_launcher/url_launcher.dart';
+//import 'package:flutter_cool_morning/screens/pdf/pdf_screen.dart';
 
 class ChatWithAvatar extends StatelessWidget {
   const ChatWithAvatar({
@@ -8,13 +9,19 @@ class ChatWithAvatar extends StatelessWidget {
     required this.avatarPosition,
     required this.image,
     required this.avatar,
-    required this.catalog,
+    required this.url,
   });
 
   final AvatarPosition avatarPosition;
   final String image;
   final String avatar;
-  final String catalog;
+  final String url;
+
+  Future<void> _launchURL(String url) async {
+    if (!await launchUrl(Uri.parse(url))) {
+      throw 'Could not launch $url';
+    }
+  }
 
   @override
   Widget build(BuildContext context) {
@@ -26,8 +33,19 @@ class ChatWithAvatar extends StatelessWidget {
         CircleAvatar(radius: 30.0, backgroundImage: AssetImage(avatar),),
         const SizedBox(width: 4.0),
         GestureDetector(
-          onTap: () {
-              Navigator.push(
+          onTap: () => _launchURL(url),
+          child: Image(image: AssetImage(image), width: 280.0,),
+        ),
+        const SizedBox(width: 4.0),
+        if (avatarPosition == AvatarPosition.right)
+        CircleAvatar(radius: 30.0, backgroundImage: AssetImage(avatar),),
+      ],
+    );
+  }
+}
+
+//Code to open the pdf file, on widget tap, with the package flutter_pdfview
+/*Navigator.push(
                 context,
                 PageRouteBuilder(
                   pageBuilder: (context, animation, secondaryAnimation) => PDFScreen(catalog: catalog),
@@ -45,14 +63,4 @@ class ChatWithAvatar extends StatelessWidget {
                     );
                   },
                 ),
-              );
-              },
-          child: Image(image: AssetImage(image), width: 280.0,),
-        ),
-        const SizedBox(width: 4.0),
-        if (avatarPosition == AvatarPosition.right)
-        CircleAvatar(radius: 30.0, backgroundImage: AssetImage(avatar),),
-      ],
-    );
-  }
-}
+              );*/

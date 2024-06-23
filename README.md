@@ -1,16 +1,7 @@
-# flutter_cool_morning
+# Cool Morning
 
-Coolmorning mobile app remade with flutter
+Find all the information that you need from "Cool Morning" store in this app.
 
-## Getting Started
-
-This project is a starting point for a Flutter application.
-
-A few resources to get you started if this is your first Flutter project:
-
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
-
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+<img src="https://github.com/thegera4/flutter_cool_morning/assets/84020433/77b0c040-927a-4f5a-a2d0-6c28eca75538" width="300px" height="600px"/>
+<img src="https://github.com/thegera4/flutter_cool_morning/assets/84020433/0e763084-df0d-4047-b538-c5dc6bd28cfd" width="300px" height="600px"/>
+<img src="https://github.com/thegera4/flutter_cool_morning/assets/84020433/af0a2e70-70ad-4211-b848-610e62590352" width="300px" height="600px"/>

@@ -35,10 +35,10 @@ const kInstagramImage = 'images/instagram.png';
 const kEmailImage = 'images/gmail.png';
 
 // Catalogs Screen URLs
-const kDesayunosUrl = 'https://drive.google.com/file/d/1muxERMvcsznSELVf41UY7FxUw0w4_DQD/view';
+const kDesayunosUrl = 'https://drive.google.com/file/d/1TRYiOZR-H8vHcJilveKD1Gyo889UY93W/view';
 const kCenasUrl = 'https://drive.google.com/file/d/1Qvzy5KamWYffmrkouHKAYQ9kDSFaFKvl/view';
 const kLucesUrl = 'https://drive.google.com/file/d/1JRyH84cMVAB-HvZkoxox-hlBS5XyHHc8/view';
-const kEspecialUrl = 'https://drive.google.com/file/d/1muxERMvcsznSELVf41UY7FxUw0w4_DQD/view';
+const kEspecialUrl = 'https://drive.google.com/file/d/1jzUpKFaEthakhUCOVtPEjMKqyN3CPH6a/view';
 
 // Contact Screen URLs
 const kWebUrl = 'https://coolmorning.com.mx/';

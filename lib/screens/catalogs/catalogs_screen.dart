@@ -68,7 +68,7 @@ class CatalogsScreen extends StatelessWidget {
                             avatarPosition: AvatarPosition.left,
                             image: kEspecialImg,
                             avatar: kAvatarEspecial,
-                            url: kDesayunosUrl,
+                            url: kEspecialUrl,
                           ),
                         ],
                       )

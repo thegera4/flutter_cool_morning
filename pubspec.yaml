@@ -2,7 +2,7 @@ name: flutter_cool_morning
 description: "Cool morning mobile app remade with flutter"
 publish_to: 'none'
 
-version: 1.0.0+1
+version: 1.0.1
 
 environment:
   sdk: '>=3.4.3 <4.0.0'

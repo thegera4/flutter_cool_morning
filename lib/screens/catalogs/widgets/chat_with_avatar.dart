@@ -34,7 +34,7 @@ class ChatWithAvatar extends StatelessWidget {
         const SizedBox(width: 4.0),
         GestureDetector(
           onTap: () => _launchURL(url),
-          child: Image(image: AssetImage(image), width: 280.0,),
+          child: Image(image: AssetImage(image), width: 240.0,),
         ),
         const SizedBox(width: 4.0),
         if (avatarPosition == AvatarPosition.right)

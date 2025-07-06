@@ -4,12 +4,12 @@ const kHomeText = 'El detalle perfecto para cada ocasión!';
 
 // Catalogs Screen Texts
 const kCatalogs = 'Catálogos';
-const kTopBarTextCatalogs = 'Revisa nuestros catálogos y escoge tu experiencia:';
+const kTopBarTextCatalogs = 'Revisa nuestros catálogos';
 const kErrorLoadingPDF = 'Error al cargar catálogo. Por favor, intenta nuevamente.';
 
 // Contact Screen Texts
 const kContact = 'Contacto';
-const kTopBarTextContact = 'Estamos a tus órdenes:';
+const kTopBarTextContact = 'Estamos a tus órdenes';
 
 // Home Screen Images
 const kHomeImage = 'images/home_screen_img.png';
@@ -62,7 +62,7 @@ const kGothicBold = 'fonts/GOTHICB.ttf';
 const kSizeBoxSpacing = 16.0;
 const kSpacingContact = 32.0;
 const kTopBarLogoWidth = 150.0;
-const kSocialContactWidth = 250.0;
+const kSocialContactWidth = 200.0;
 
 // Other values
 const kCatalogsBackgroundOpacity = 0.2;

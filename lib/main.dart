@@ -6,6 +6,13 @@ import 'package:flutter/services.dart';
 void main() {
   // Set preferred orientations to portrait only
   WidgetsFlutterBinding.ensureInitialized();
+
+  // Enable edge-to-edge mode for Android 15+ compatibility
+  // Note: System bar styling is now handled through Android themes to avoid deprecated APIs
+  SystemChrome.setEnabledSystemUIMode(
+    SystemUiMode.edgeToEdge,
+  );
+
   SystemChrome.setPreferredOrientations([
     DeviceOrientation.portraitUp,
     DeviceOrientation.portraitDown,

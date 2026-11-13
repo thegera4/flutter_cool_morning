@@ -1,16 +1,12 @@
 package com.jgmedellin.coolmorning.flutter_cool_morning
 
-import android.os.Build
 import android.os.Bundle
-import androidx.core.view.WindowCompat
-import io.flutter.embedding.android.FlutterActivity
+import androidx.activity.enableEdgeToEdge
+import io.flutter.embedding.android.FlutterFragmentActivity
 
-class MainActivity: FlutterActivity() {
+class MainActivity : FlutterFragmentActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
-        // Enable edge-to-edge display for Android 15+ compatibility
-        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.VANILLA_ICE_CREAM) {
-            WindowCompat.setDecorFitsSystemWindows(window, false)
-        }
+        enableEdgeToEdge()
         super.onCreate(savedInstanceState)
     }
 }

@@ -2,7 +2,7 @@ name: flutter_cool_morning
 description: "Cool morning app"
 publish_to: 'none'
 
-version: 1.0.6+6 # when uploading to playstore, do not forget to increase the +x
+version: 1.0.7+7 # when uploading to playstore, do not forget to increase the +x
 
 environment:
   sdk: '>=3.4.3 <4.0.0'

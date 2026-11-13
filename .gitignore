@@ -45,3 +45,10 @@ app.*.map.json
 key.properties
 **/*.keystore
 **/*.jks
+
+# Local Play Store deployment environment and credentials
+.venv/
+scripts/.env
+scripts/deploy.local.json
+scripts/*-key.json
+scripts/*service-account*.json

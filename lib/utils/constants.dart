@@ -29,6 +29,7 @@ const kContactBackgroundImg = 'images/contact_background.png';
 
 // Contact Screen Images
 const kWebImage = 'images/website.png';
+const kCenasWebImage = 'images/cenas_web.png';
 const kWhatsappImage = 'images/whatsapp.png';
 const kFacebookImage = 'images/facebook.png';
 const kInstagramImage = 'images/instagram.png';
@@ -42,6 +43,7 @@ const kEspecialUrl = 'https://drive.google.com/file/d/1jzUpKFaEthakhUCOVtPEjMKqy
 
 // Contact Screen URLs
 const kWebUrl = 'https://coolmorning.com.mx/';
+const kCenasWebUrl = 'https://www.cenasencolumpios.com.mx/';
 const kWhatsappUrl = 'https://wa.me/528711390732?text=Hola,%20me%20gustaría%20hacer%20un%20pedido...';
 const kFacebookUrl = 'https://www.facebook.com/CoolMorningLaguna';
 const kInstagramUrl = 'https://www.instagram.com/coolmorning';

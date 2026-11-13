@@ -47,6 +47,11 @@ class ContactScreen extends StatelessWidget {
                           ),
                           SizedBox(height: kSpacingContact),
                           SocialContact(
+                            image: kCenasWebImage,
+                            url: kCenasWebUrl,
+                          ),
+                          SizedBox(height: kSpacingContact),
+                          SocialContact(
                             image: kWhatsappImage,
                             url: kWhatsappUrl,
                           ),
